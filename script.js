@@ -49,6 +49,7 @@ sr.reveal(".featured-btn",{delay:300})
 sr.reveal(".social-icons",{delay:400})
 sr.reveal(".featured-images",{delay:300})
 sr.reveal(".featured-info",{delay:250})
+sr.reveal(".body",{delay:250})
 
 // project
 
@@ -77,6 +78,7 @@ sight.reveal(".skills-list",{delay:100});
 sr.reveal('.top-header',{}),
 sr.reveal(".project-container",{delay:200})
 sr.reveal(".project-box",{delay:250});
+sr.reveal(".skillgone",{delay:300});
 
 // contact
 sr.reveal('.top-header',{}),
@@ -88,3 +90,47 @@ sr.reveal(".middle-footer",{delay:700})
 sr.reveal(".footer-menu",{delay:700})
 sr.reveal(".footer-social",{delay:700})
 sr.reveal(".botom-footer",{delay:700})
+
+let calm=document.getElementById("calm");
+let counter=0
+
+setInterval(() =>{
+ if(counter == 90){
+     clearInterval()
+ } else{
+       counter += 1 }
+calm.innerHTML=counter + "%"},20);
+
+let number1=document.getElementById("number1");
+let counter1=0
+
+setInterval(() =>{
+ if(counter1 == 85){
+     clearInterval()
+ } else{
+       counter1 += 1 }
+number1.innerHTML=counter1 + "%"},24);
+
+
+
+let number2=document.getElementById("number2");
+let counter2=0
+
+setInterval(() =>{
+ if(counter2 == 90){
+     clearInterval()
+ } else{
+       counter2 += 1 }
+number2.innerHTML=counter2 + "%"},20);
+
+
+let number3=document.getElementById("number3");
+let counter3=0
+
+setInterval(() =>{
+ if(counter3 == 87){
+     clearInterval()
+ } else{
+       counter3 += 1 }
+number3.innerHTML=counter3 + "%"},23);
+

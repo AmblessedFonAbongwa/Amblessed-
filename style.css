@@ -12,11 +12,13 @@
     --third-color:rgb(192,166,49);
     --first-shadow-color:rgba(0,0,0,0.1);
 
+   
+
+
 }
 *{
     margin: 0;
     padding: 0; 
-    box-sizing:border-box;
     font-family: 'poppins',sans-serif;
 }
 html{
@@ -57,6 +59,13 @@ i{
 }
 .container{
     position: relative;   
+
+}
+.dark-theme{
+            --first-shadow-color:rgb(255, 255, 255);
+            --body-color:rgb(7, 7, 7);
+            --color-white:rgb(28, 24, 24);
+    
 
 }
 nav{
@@ -531,7 +540,7 @@ footer{
   }
 
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 600px){
     .menu-btn{
         display: flex;
         justify-content: center;
@@ -593,4 +602,101 @@ footer{
 }
 @media only screen and (max-width:500px){
 
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+:root{
+    --primary-color:#edfcfc;
+    --secondary-color:#212121;
+}
+.skillgone h2{
+   color: var(--text-color-second);
+}
+
+.body{
+    background: var(--color-white);
+    height: 30vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 140px;
+}
+.skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    text-align: center;
+}
+.outer{
+    height: 160px;
+    width: 160;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                6px 6px 10px -1px rgba(255,255,255,0.7); 
+    padding: 20px;
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                 inset 4px 4px 6px -1px rgba(255,255,255,0.7),
+                 -0.5px -0.5px 0px rgba(255,255,255,1),
+                 0.5px 0.5px 0px rgba(0,0,0,0.15),
+                 0px 12px 10px -10px rgba(0,0,0,0.05);
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+}
+#number,#number1,#number2,#number3{
+    font-weight: 600;
+    color: var(--text-color-second);
+}
+
+circle {
+    fill: none;
+    stroke-width:20px;
+    stroke: var(--second-color);
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: bless 2s linear forwards;
+}
+ .skill:nth-child(2) circle{
+    animation: blesso 2s linear forwards;
+}
+@keyframes blesso{
+    100%{
+        stroke-dashoffset: 92;
+    }
+}
+ .skill:nth-child(3) circle{
+    animation: blessy 2s linear forwards;
+}
+@keyframes blessy{
+    100%{
+        stroke-dashoffset: 70;
+    }
+}
+ .skill:nth-child(4) circle{
+    animation: blessn 2s linear forwards;
+}
+@keyframes blessn{
+    100%{
+        stroke-dashoffset: 110;
+    }
+}
+@keyframes bless{
+    100%{
+        stroke-dashoffset: 90;
+    }
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
