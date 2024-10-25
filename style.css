@@ -64,6 +64,10 @@ i{
     position: relative;   
 
 }
+.container{
+    width: 100%;
+    overflow: hidden;
+}
 nav{
     position: fixed;
     display: flex;
@@ -75,6 +79,7 @@ nav{
     padding-inline: 1vw;
     z-index: 100;
     transform: .3s;
+    overflow: hidden;
 }
 .namee{
     position: relative;
@@ -542,7 +547,7 @@ footer{
         align-items: center;
     }
     nav{
-        width: 60%;
+        width: 80%;
     }
     #icon{
         display: none;
