@@ -20,8 +20,6 @@
     margin: 0;
     padding: 0; 
     font-family: 'poppins',sans-serif;
-    box-sizing: border-box;
-    object-fit: fill;
 }
 html{
     scroll-behavior: smooth;
@@ -545,27 +543,21 @@ footer{
     }
     nav{
         width: 100%;
+        }
+        #menuc,#cross{
+            margin-right: 20px;
+        }
+    
+    i{
+        z-index: 10;
     }
     #icon{
         display: none;
     }
-    .nav-links.responsive{
+    .responsive{
         right: 0;
     }
-    .nav-links ul a{
-        position: fixed;
-        top: 100px;
-        justify-content: center;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(20px);
-        width: 100%;
-        min-height: 450px;
-        height: 90vh;
-        transition: .3s;
-        display: none;
-    }
-    .featured-box{
+.featured-box{
         flex-direction: column;
         justify-content: left;
         height: 100vh;
@@ -581,16 +573,35 @@ footer{
         align-items: flex-start;
         align-self: start;
         min-height: 0vh;
-        width: 60%;
+        margin-left: -10px;
+        width: 85%;
     }
     .social-icons{
         margin-top: 2em;
+    }
+    #naviga{
+        position: absolute;
+        background-color: #bbbbbb0c;
+        backdrop-filter: blur(20px);
+        top: -1000px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
     }
     .featured-info{
        padding-right: 33px;
     }
     .featured-info p{
         font-size: 12px;
+        text-align: left;
+        width: 75%;
+    }
+    .image, .featured-images img {
+        margin-bottom: 20px;
     }
 
     .images {
@@ -614,6 +625,7 @@ footer{
         margin-right: 20px;
     }
       .top-header {
+        margin-top: 70px;
         margin-bottom: 1rem; 
         width: 90%;
     }
@@ -638,7 +650,15 @@ footer{
     #dont{
         display: none;
     }
-    .featured-text-card span {
+    .scrolbtn {
+        position: absolute;
+        left: 50%;
+        top: 19.6%;
+    }
+    .featured-text-card  {
+        width: 78%;
+        display: flex;
+        justify-content: center;
 z-index: 12;
     }
     textarea {

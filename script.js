@@ -1,14 +1,18 @@
+ const bar=document.getElementById("naviga")
+ function corncharf(){
+  if(bar.style.top="-1000px"){
+     bar.style.top="1px";
+    document.getElementById("menuc").style.display="none"
+    document.getElementById("cross").style.display="block"
+    };
+     }
 
-function corncharf(){
-var menug=document.getElementById("naviga");
+function move(){
+bar.style.top="-1000px"  
+  document.getElementById("menuc").style.display="block"
+    document.getElementById("cross").style.display="none"
+}
 
-if(menug.className ==="nav-links"){
-    menug.classList += "responsive"
-}
-else{
-    menug.className = "nav-links"
-}
-}
 
 window.onscroll=function(){
      headershadow()
