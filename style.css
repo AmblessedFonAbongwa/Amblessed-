@@ -570,7 +570,7 @@ footer{
     }
     .featured-text{
         width: 100%;
-        order: 2;
+        order: 1;
         justify-content: left;
         align-items: start;
         min-height: 0vh;
