@@ -22,6 +22,7 @@
     font-family: 'poppins',sans-serif;
     box-sizing: border-box;
     object-fit: fill;
+    z-index: 1;
 }
 html{
     scroll-behavior: smooth;
