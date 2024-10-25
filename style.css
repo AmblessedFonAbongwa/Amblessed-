@@ -85,7 +85,7 @@ nav{
 }
 .namee span{
     position: absolute;
-    top: -19px;
+    top: -18px;
     right: -16.8px;
     overflow: hidden;
     font-size: 5em;
@@ -133,7 +133,7 @@ nav{
 .featured-box{
     position: relative;
     display: flex;
-    height: 100vh;
+    height: 99vh;
     min-height: 700px ;
     width: 100%;
 }
@@ -157,7 +157,7 @@ border-radius: 5px;
 }
 .featured-name{
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--text-color-second);
     margin-block: 20px; 
 }
