@@ -78,7 +78,6 @@ nav{
     padding-inline: 1vw;
     z-index: 100;
     transform: .3s;
-    overflow: hidden;
 }
 .namee{
     position: relative;
@@ -92,7 +91,6 @@ nav{
     position: absolute;
     top: -18px;
     right: -16.8px;
-    overflow: hidden;
     font-size: 5em;
     color: var(--text-color-second);
     z-index: 100;
