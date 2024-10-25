@@ -84,12 +84,7 @@ sr.reveal(".skillgone",{delay:300});
 sr.reveal('.top-header',{}),
 sr.reveal(".col",{delay:200})
 sr.reveal(".contact-info",{delay: 400})
-sr.reveal(".form-control",{delay:700})
-sr.reveal(".top-footer",{delay:700})
-sr.reveal(".middle-footer",{delay:700})
-sr.reveal(".footer-menu",{delay:700})
-sr.reveal(".footer-social",{delay:700})
-sr.reveal(".botom-footer",{delay:700})
+sr.reveal(".form-control",{delay:450})
 
 let calm=document.getElementById("calm");
 let counter=0

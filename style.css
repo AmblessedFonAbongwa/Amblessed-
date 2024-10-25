@@ -20,6 +20,9 @@
     margin: 0;
     padding: 0; 
     font-family: 'poppins',sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    object-fit: fill;
 }
 html{
     scroll-behavior: smooth;
@@ -76,7 +79,7 @@ nav{
     width: 100%;
     height: 90px;
     line-height: 90px;
-    padding-inline: 9vw;
+    padding-inline: 1vw;
     z-index: 100;
     transform: .3s;
 }
@@ -92,6 +95,7 @@ nav{
     position: absolute;
     top: -19px;
     right: -16.8px;
+    overflow: hidden;
     font-size: 5em;
     color: var(--text-color-second);
 }
@@ -130,7 +134,7 @@ nav{
     display: none;
 }
 .wrapper{
-    padding-inline: 10vh;
+    padding-inline: 0vh;
     width: 100%;
 }
 .featured-box{
@@ -210,7 +214,7 @@ border-radius: 5px;
 
 .featured-images{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items:center;
     min-height: 80vh;
     width: 50%;
@@ -528,26 +532,26 @@ footer{
 }
 
 
-
-@media only screen and (max-width: 1024px){
-  .featured-text{
-    padding: 0;
-  }     
-  .image, .featured-images img{
-    width: 320px;
-    height: 320px;
-    margin-top: 0;
-  }
-
-}
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
+   *{
+    overflow-x: visible;
+   }
+   body{
+    width: 100%;
+   }
+   #headman{
+    font-size: 15px;
+   }
     .menu-btn{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .btn {
-     display: none;
+    nav{
+        width: 60%;
+    }
+    #icon{
+        display: none;
     }
     .nav-links.responsive{
         right: 0;
@@ -567,136 +571,121 @@ footer{
     }
     .featured-box{
         flex-direction: column;
-        justify-content: center;
+        justify-content: left;
         height: 100vh;
+        width: 600px;
     }
     .featured-text{
         width: 100%;
         order: 2;
-        justify-content: center;
-        align-items: flex-start;
-        min-height: 60vh;
+        justify-content: left;
+        align-items: start;
+        min-height: 0vh;
+        width: 60%;
     }
     .social-icons{
         margin-top: 2em;
     }
-    .featured-images{
-        order: 1;
-        justify-content: center;
-        min-height: 150px;
+
+    .images {
         width: 100%;
-        margin-top: 65px;
-        
     }
-    .image, .images img{
+    .images img{
+        width: 0px;
+        height: 0px;
+        margin-top: 0;
+        object-fit: contain;
+        overflow: visible;
+        
+      }
+      @keyframes imgfloat {
+        50%{
+            transform: translateY(10px);
+            border-radius: 5% 5% 5% 5% ;
+        }
+    }
+      .top-header {
+        margin-bottom: 1rem; 
+        width: 90%;
+    }
+    .form-inputs input {
+        width: 87%;
+        margin-bottom: 9px;
+        height: 4vh;
+    }
+    footer {
+        row-gap: 20px;
+        background: color #f8f8f8;
+        padding-block: 40px 60px;
+    }
+    .image, .featured-images img {
         width: 320px;
         height: 320px;
         margin-top: 0;
-      }
+    }
+    section {
+        padding-block: .8rem;
+    }
+    #dont{
+        display: none;
+    }
+    .featured-text-card span {
+z-index: 12;
+    }
+    textarea {
+        width: 90%;
+        height: 150px;
+    }
+     
     .row{
         flex-direction: column;
+        width: 100%;
     }
     .project-container{
         flex-direction: column;
+        width: 100%;
+    }
+    .about-info {
+    }
+    .col{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .project-box {
+        width: 70%;
+        background-color: var(--second-color);
+    }
+    .project-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 }
-@media only screen and (max-width:500px){
-
-}
-#icon{
-    width: 30px;
-    cursor: pointer;
-    height: 30px;
-    margin-top: 16px;
-    margin-left: 10px;
-}
-:root{
-    --primary-color:#edfcfc;
-    --secondary-color:#212121;
-}
-.skillgone h2{
-   color: var(--text-color-second);
-}
-
-.body{
-    background: var(--color-white);
-    height: 30vh;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    gap: 140px;
-}
-.skill{
-    width: 160px;
-    height: 160px;
-    position: relative;
-    text-align: center;
-}
-.outer{
-    height: 160px;
-    width: 160;
-    border-radius: 50%;
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                6px 6px 10px -1px rgba(255,255,255,0.7); 
-    padding: 20px;
-}
-.inner{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-                 inset 4px 4px 6px -1px rgba(255,255,255,0.7),
-                 -0.5px -0.5px 0px rgba(255,255,255,1),
-                 0.5px 0.5px 0px rgba(0,0,0,0.15),
-                 0px 12px 10px -10px rgba(0,0,0,0.05);
-                 display: flex;
-                 justify-content: center;
-                 align-items: center;
-}
-#number,#number1,#number2,#number3{
-    font-weight: 600;
-    color: var(--text-color-second);
-}
-
-circle {
-    fill: none;
-    stroke-width:20px;
-    stroke: var(--second-color);
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: bless 2s linear forwards;
-}
- .skill:nth-child(2) circle{
-    animation: blesso 2s linear forwards;
-}
-@keyframes blesso{
-    100%{
-        stroke-dashoffset: 92;
+@media (max-width:1200px) {
+    *{
+        overflow-x: visible
+    };
+    .nav-bar{
+        width: 10%;
+        padding-inline: .3vw;
     }
-}
- .skill:nth-child(3) circle{
-    animation: blessy 2s linear forwards;
-}
-@keyframes blessy{
-    100%{
-        stroke-dashoffset: 70;
+    #naviga ul a {
+        text-decoration: none;
+        color: var(--text-color-second);
+        font-weight: 500;
+        padding-inline: 12px;
+        margin-inline: 12px;
     }
-}
- .skill:nth-child(4) circle{
-    animation: blessn 2s linear forwards;
-}
-@keyframes blessn{
-    100%{
-        stroke-dashoffset: 110;
+    nav {
+        width: 80%;
+        height: 80px;
     }
-}
-@keyframes bless{
-    100%{
-        stroke-dashoffset: 90;
+    .featured-images {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        min-height: 40vh;
+        width: 50%;
     }
-}
-svg{
-    position: absolute;
-    top: 0;
-    left: 0;
 }
