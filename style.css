@@ -63,13 +63,6 @@ i{
     position: relative;   
 
 }
-.dark-theme{
-            --first-shadow-color:rgb(255, 255, 255);
-            --body-color:rgb(7, 7, 7);
-            --color-white:rgb(28, 24, 24);
-    
-
-}
 nav{
     position: fixed;
     display: flex;
@@ -86,7 +79,7 @@ nav{
     position: relative;
 }
 #headman{
-    font: size 30px; 
+    font: size 29px; 
     font-weight: 600;
     color: var(--text-color-third);
 }
@@ -97,6 +90,7 @@ nav{
     overflow: hidden;
     font-size: 5em;
     color: var(--text-color-second);
+    z-index: 100;
 }
 .nav-links ul{
     display: flex;
