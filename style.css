@@ -490,6 +490,7 @@ footer{
 }
 #headman img{
     height: 11vh;
+    max-height: 10vh;
 }
 #headman {
     display: flex;
