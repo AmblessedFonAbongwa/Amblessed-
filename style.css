@@ -488,6 +488,13 @@ footer{
     font-size: 25px;
     font-weight: 600;
 }
+#headman img{
+    height: 30vh;
+}
+#headman {
+    display: flex;
+    justify-content: center;
+}
 .middle-footer .footer-menu{
     display: flex;
 }
